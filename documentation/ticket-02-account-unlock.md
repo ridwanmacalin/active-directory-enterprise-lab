@@ -1,10 +1,10 @@
-Ticket 02 - Account Unlock
+# Ticket 02 - Account Unlock
 
-Issue
+## Issue
 
 A user was unable to access their account because the Active Directory account was locked.
 
-Environment
+## Environment
 
 Windows Server
 
@@ -12,23 +12,23 @@ Active Directory Domain Services
 
 Domain: adlab.local
 
-Troubleshooting
+## Troubleshooting
 
 I opened Active Directory Users and Computers and located the affected user.
 
 I reviewed the account properties and identified that the account needed to be unlocked.
 
-Resolution
+## Resolution
 
 I unlocked the user's Active Directory account.
 
 I also confirmed that the account was enabled.
 
-Verification
+## Verification
 
 Verified that the user's account was no longer locked and was available for authentication.
 
-Skills Demonstrated
+## Skills Demonstrated
 
 Active Directory administration
 
