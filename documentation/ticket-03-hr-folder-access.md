@@ -26,13 +26,13 @@ The user was not a member of the HR security group but was still able to access 
 
 I then reviewed:
 
-Active Directory group membership
+- Active Directory group membership
 
-Share permissions
+- Share permissions
 
-NTFS permissions
+- NTFS permissions
 
-Access assigned to the HR folder
+- Access assigned to the HR folder
 
 ## Root Cause
 
