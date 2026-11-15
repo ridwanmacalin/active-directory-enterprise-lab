@@ -8,26 +8,20 @@ This affected communication with the adlab.local domain.
 
 ## Environment
 
-DC01
+### DC01
 
-IP Address: 192.168.56.10
+- IP Address: `192.168.56.10`
+- Role: Domain Controller
+- Role: DNS Server
+- Domain: `adlab.local`
 
-Role: Domain Controller
+### PC01
 
-Role: DNS Server
-
-Domain: adlab.local
-
-PC01
-
-IP Address: 192.168.56.20
-
-DNS Server: 192.168.56.10
-
-Operating System: Windows 11
-
-Domain: adlab.local
-
+- IP Address: `192.168.56.20`
+- DNS Server: `192.168.56.10`
+- Operating System: Windows 11
+- Domain: `adlab.local`
+  
 ## Troubleshooting
 
 I first checked the Windows network configuration using:
@@ -66,7 +60,7 @@ For Active Directory to function properly, PC01 needed network connectivity to D
 
 I corrected the VirtualBox network configuration and confirmed that PC01 was configured to use:
 
-192.168.56.10
+`192.168.56.10`
 
 as its DNS server.
 
@@ -98,20 +92,12 @@ It also reinforced the importance of checking network configuration systematical
 
 ## Skills Demonstrated
 
-DNS troubleshooting
-
-TCP/IP networking
-
-Windows networking
-
-Active Directory
-
-VirtualBox networking
-
-ipconfig
-
-ping
-
-nslookup
-
-Root-cause analysis
+- DNS troubleshooting
+- TCP/IP networking
+- Windows networking
+- Active Directory
+- VirtualBox networking
+- `ipconfig`
+- `ping`
+- `nslookup`
+- Root-cause analysis
