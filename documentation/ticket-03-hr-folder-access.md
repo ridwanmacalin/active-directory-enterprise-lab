@@ -11,7 +11,7 @@ A user was able to access the HR shared folder even though the user was not a me
 - Active Directory Security Groups
 - NTFS Permissions
 - Windows File Sharing
-- Share: \\DC01\Company``
+- Share: `\\DC01\Company`
 
 ## Troubleshooting
 
