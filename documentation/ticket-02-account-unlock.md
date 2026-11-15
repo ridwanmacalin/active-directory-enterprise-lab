@@ -8,7 +8,7 @@ A user was unable to access their account because the Active Directory account w
 
 - Windows Server
 - Active Directory Domain Services
-- Domain: adlab.local
+- Domain: \adlab.local``
 
 ## Troubleshooting
 
