@@ -32,19 +32,27 @@ Domain: adlab.local
 
 I first checked the Windows network configuration using:
 
+```powershell
 ipconfig /all
+```
 
 I then tested connectivity to the domain controller:
 
+```powershell
 ping 192.168.56.10
+```
 
 I tested communication using the domain controller's hostname:
 
+```powershell
 ping dc01.adlab.local
+```
 
 I also checked DNS name resolution:
 
+```powershell
 nslookup dc01.adlab.local
+```
 
 In addition to Windows networking settings, I reviewed the network adapters configured in Oracle VirtualBox.
 
