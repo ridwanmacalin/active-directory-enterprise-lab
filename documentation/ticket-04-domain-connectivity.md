@@ -74,13 +74,17 @@ as its DNS server.
 
 After correcting the configuration:
 
+```powershell
 ping 192.168.56.10
+```
 
 was successful.
 
 I then tested:
 
+```powershell
 ping dc01.adlab.local
+```
 
 and confirmed that the hostname successfully resolved to DC01.
 
