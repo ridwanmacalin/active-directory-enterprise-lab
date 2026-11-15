@@ -7,9 +7,7 @@ A user was unable to access their account because the Active Directory account w
 ## Environment
 
 - Windows Server
-
 - Active Directory Domain Services
-
 - Domain: adlab.local
 
 ## Troubleshooting
@@ -31,13 +29,8 @@ Verified that the user's account was no longer locked and was available for auth
 ## Skills Demonstrated
 
 - Active Directory administration
-
 - Account management
-
 - Account lockout troubleshooting
-
 - Windows Server
-
 - User support
-
 - Help desk troubleshooting
