@@ -1,36 +1,105 @@
-# Ticket 04 - Domain Connectivity Issue
+Ticket 04 - Domain Connectivity and DNS
 
-## Issue
+Issue
 
-PC01 was unable to communicate with the domain controller, DC01.
+PC01 was unable to properly communicate with the domain controller, DC01.
 
-## Troubleshooting
+This affected communication with the adlab.local domain.
 
-I checked:
+Environment
 
-- IP configuration
-- DNS settings
-- VirtualBox network adapters
-- Connectivity between PC01 and DC01
+DC01
 
-Commands used:
+IP Address: 192.168.56.10
+
+Role: Domain Controller
+
+Role: DNS Server
+
+Domain: adlab.local
+
+PC01
+
+IP Address: 192.168.56.20
+
+DNS Server: 192.168.56.10
+
+Operating System: Windows 11
+
+Domain: adlab.local
+
+Troubleshooting
+
+I first checked the Windows network configuration using:
 
 ipconfig /all
 
+I then tested connectivity to the domain controller:
+
 ping 192.168.56.10
+
+I tested communication using the domain controller's hostname:
+
+ping dc01.adlab.local
+
+I also checked DNS name resolution:
 
 nslookup dc01.adlab.local
 
-## Resolution
+In addition to Windows networking settings, I reviewed the network adapters configured in Oracle VirtualBox.
 
-I corrected the network and DNS configuration.
+Root Cause
 
-After the changes, PC01 was able to communicate with DC01 and resolve the domain name successfully.
+The issue was related to the virtual network configuration and DNS settings.
 
-## Skills Used
+For Active Directory to function properly, PC01 needed network connectivity to DC01 and needed to use the domain controller as its DNS server.
 
-- DNS
-- TCP/IP
-- Windows networking
-- Active Directory
-- Network troubleshooting
+Resolution
+
+I corrected the VirtualBox network configuration and confirmed that PC01 was configured to use:
+
+192.168.56.10
+
+as its DNS server.
+
+Verification
+
+After correcting the configuration:
+
+ping 192.168.56.10
+
+was successful.
+
+I then tested:
+
+ping dc01.adlab.local
+
+and confirmed that the hostname successfully resolved to DC01.
+
+What I Learned
+
+This issue demonstrated how important DNS is in an Active Directory environment.
+
+A Windows computer can have basic network connectivity while still experiencing domain-related problems if DNS is configured incorrectly.
+
+It also reinforced the importance of checking network configuration systematically rather than changing multiple settings at once.
+
+Skills Demonstrated
+
+DNS troubleshooting
+
+TCP/IP networking
+
+Windows networking
+
+Active Directory
+
+VirtualBox networking
+
+ipconfig
+
+ping
+
+nslookup
+
+Root-cause analysis
