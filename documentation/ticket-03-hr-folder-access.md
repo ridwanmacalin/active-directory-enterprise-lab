@@ -7,15 +7,10 @@ A user was able to access the HR shared folder even though the user was not a me
 ## Environment
 
 - Windows Server
-
 - Active Directory
-
 - Active Directory Security Groups
-
 - NTFS Permissions
-
 - Windows File Sharing
-
 - Share: \\DC01\Company
 
 ## Troubleshooting
@@ -27,11 +22,8 @@ The user was not a member of the HR security group but was still able to access 
 I then reviewed:
 
 - Active Directory group membership
-
 - Share permissions
-
 - NTFS permissions
-
 - Access assigned to the HR folder
 
 ## Root Cause
@@ -59,15 +51,9 @@ Both share permissions and NTFS permissions should be reviewed when troubleshoot
 ## Skills Demonstrated
 
 - Active Directory
-
 - Security groups
-
 - NTFS permissions
-
 - Share permissions
-
 - Access control
-
 - Principle of least privilege
-
 - Troubleshooting
