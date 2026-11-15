@@ -1,10 +1,10 @@
-Ticket 03 - HR Folder Access
+# Ticket 03 - HR Folder Access
 
-Issue
+## Issue
 
 A user was able to access the HR shared folder even though the user was not a member of the HR security group.
 
-Environment
+## Environment
 
 Windows Server
 
@@ -18,7 +18,7 @@ Windows File Sharing
 
 Share: \\DC01\Company
 
-Troubleshooting
+## Troubleshooting
 
 I reviewed the user's Active Directory group membership.
 
@@ -34,29 +34,29 @@ NTFS permissions
 
 Access assigned to the HR folder
 
-Root Cause
+## Root Cause
 
 The permissions applied to the folder allowed access that was broader than intended.
 
-Resolution
+## Resolution
 
 I corrected the permissions so that access to the HR folder was limited to authorized users.
 
 The configuration was changed to better follow the principle of least privilege.
 
-Verification
+## Verification
 
 I tested the folder permissions again using an account that should not have HR access.
 
 The unauthorized account was no longer able to access the restricted folder.
 
-What I Learned
+## What I Learned
 
 Group membership alone does not guarantee that a resource is properly secured.
 
 Both share permissions and NTFS permissions should be reviewed when troubleshooting access to Windows file shares.
 
-Skills Demonstrated
+## Skills Demonstrated
 
 Active Directory
 
