@@ -113,12 +113,10 @@ After correcting the network and DNS configuration, PC01 successfully communicat
 
 I also practiced several common IT support scenarios within the lab:
 
-- Password reset
-- Account unlock
-- Incorrect folder permissions
-- Group membership troubleshooting
-- Domain connectivity troubleshooting
-- DNS troubleshooting
+- [Password Reset](documentation/ticket-01-password-reset.md)
+- [Account Unlock](documentation/ticket-02-account-unlock.md)
+- [HR Folder Access and Permissions](documentation/ticket-03-hr-folder-access.md)
+- [Domain Connectivity and DNS Troubleshooting](documentation/ticket-04-domain-connectivity.md)
 
 Detailed ticket-style documentation is available in the `documentation` folder.
 
