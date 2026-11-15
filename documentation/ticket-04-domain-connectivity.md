@@ -1,12 +1,12 @@
-Ticket 04 - Domain Connectivity and DNS
+# Ticket 04 - Domain Connectivity and DNS
 
-Issue
+## Issue
 
 PC01 was unable to properly communicate with the domain controller, DC01.
 
 This affected communication with the adlab.local domain.
 
-Environment
+## Environment
 
 DC01
 
@@ -28,7 +28,7 @@ Operating System: Windows 11
 
 Domain: adlab.local
 
-Troubleshooting
+## Troubleshooting
 
 I first checked the Windows network configuration using:
 
@@ -48,13 +48,13 @@ nslookup dc01.adlab.local
 
 In addition to Windows networking settings, I reviewed the network adapters configured in Oracle VirtualBox.
 
-Root Cause
+## Root Cause
 
 The issue was related to the virtual network configuration and DNS settings.
 
 For Active Directory to function properly, PC01 needed network connectivity to DC01 and needed to use the domain controller as its DNS server.
 
-Resolution
+## Resolution
 
 I corrected the VirtualBox network configuration and confirmed that PC01 was configured to use:
 
@@ -62,7 +62,7 @@ I corrected the VirtualBox network configuration and confirmed that PC01 was con
 
 as its DNS server.
 
-Verification
+## Verification
 
 After correcting the configuration:
 
@@ -76,7 +76,7 @@ ping dc01.adlab.local
 
 and confirmed that the hostname successfully resolved to DC01.
 
-What I Learned
+## What I Learned
 
 This issue demonstrated how important DNS is in an Active Directory environment.
 
@@ -84,7 +84,7 @@ A Windows computer can have basic network connectivity while still experiencing 
 
 It also reinforced the importance of checking network configuration systematically rather than changing multiple settings at once.
 
-Skills Demonstrated
+## Skills Demonstrated
 
 DNS troubleshooting
 
