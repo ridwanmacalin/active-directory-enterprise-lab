@@ -6,17 +6,17 @@ A user was able to access the HR shared folder even though the user was not a me
 
 ## Environment
 
-Windows Server
+- Windows Server
 
-Active Directory
+- Active Directory
 
-Active Directory Security Groups
+- Active Directory Security Groups
 
-NTFS Permissions
+- NTFS Permissions
 
-Windows File Sharing
+- Windows File Sharing
 
-Share: \\DC01\Company
+- Share: \\DC01\Company
 
 ## Troubleshooting
 
@@ -58,16 +58,16 @@ Both share permissions and NTFS permissions should be reviewed when troubleshoot
 
 ## Skills Demonstrated
 
-Active Directory
+- Active Directory
 
-Security groups
+- Security groups
 
-NTFS permissions
+- NTFS permissions
 
-Share permissions
+- Share permissions
 
-Access control
+- Access control
 
-Principle of least privilege
+- Principle of least privilege
 
-Troubleshooting
+- Troubleshooting
